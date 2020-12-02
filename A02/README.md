@@ -1,0 +1,1 @@
+# Les exemples complémentairea de A02 (pour version python 3.7+) car dans google Collab pour le moment 3.6
