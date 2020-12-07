@@ -25,10 +25,9 @@ def th_appel_fonc():
   t.start()
   fin = time.time()
   print(f'durée = {fin-debut}')
-  t.join()
 
-print("Sans thread .... ")
-pgm(appel_fonc)
+# print("Sans thread .... ")
+# pgm(appel_fonc)
 
-print("avace Thread")
+print("avec Thread")
 pgm(th_appel_fonc)

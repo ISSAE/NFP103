@@ -18,6 +18,13 @@ def mafonc3(name):
 
 if __name__ == '__main__':
     print('main started')
+    d = time.time()
+    mafonc1(1) 
+    mafonc2(2) 
+    mafonc3(3)
+    f = time.time()
+    print("En séquentiel le temps est ", f-d)
+    d = time.time()
     t1 = threading.Thread(target=mafonc1, args=['nfp103'])
     t1.start()
     t2 = threading.Thread(target=mafonc2, args=['titi'])
@@ -27,4 +34,5 @@ if __name__ == '__main__':
     t1.join()
     t2.join()
     t3.join()
-    print('main terminée')
+    f = time.time()
+    print('main terminée ', f -d)
