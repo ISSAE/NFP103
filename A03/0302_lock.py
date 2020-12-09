@@ -5,6 +5,7 @@ import time
 
 verrou = RLock()
 
+
 class Afficheur(Thread):
 
     """Thread chargé simplement d'afficher un mot dans la console."""
@@ -25,6 +26,7 @@ class Afficheur(Thread):
                     # attente += random.randint(1, 60) / 100
                     time.sleep(attente)       
             i += 1
+
 
 # Création des threads
 thread_1 = Afficheur("canard")

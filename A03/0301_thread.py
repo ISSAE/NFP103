@@ -3,6 +3,7 @@ import sys
 from threading import Thread
 import time
 
+
 class Afficheur2(Thread):
 
     """Thread chargé simplement d'afficher un mot dans la console."""
@@ -22,6 +23,7 @@ class Afficheur2(Thread):
                 attente += random.randint(1, 60) / 100
                 time.sleep(attente)
             i += 1
+
 
 # Création des threads
 thread_1 = Afficheur2("canard")
