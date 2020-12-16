@@ -1,4 +1,7 @@
 {
-    "cSpell.language": "fr,fr-FR",
-    "python.pythonPath": "S:\\opt\\Python390\\python.exe"
+    "cSpell.language": "fr,fr-FR,en",
+    "python.pythonPath": "S:\\opt\\Python390\\python.exe",
+    "cSpell.enableFiletypes": [
+        "!python"
+    ]
 }
